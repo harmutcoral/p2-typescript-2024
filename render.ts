@@ -18,7 +18,7 @@ const head = (title: string) => `
       align-items: center;
       padding: .4rem;
       border-bottom: 1px solid #ddd;
-      cursor: pointer; /* Added cursor style for better UX */
+      cursor: pointer; 
     }
     .pokemon img {
       width: 3rem;
@@ -37,13 +37,13 @@ const head = (title: string) => `
 const renderPokemons = (pokemons: Pokemon[]) => {
   let html = "";
   for (const pokemon of pokemons) {
-    html += `<a href="https://pokeapi.co/api/v2/pokemon/${pokemon.name}" class="pokemon"'>
+    html += `<a href="pokemon-data/${pokemon.name.toLowerCase()}.html" class="pokemon">
       <img src="${pokemon.imageUrl}" />
       <div class="data">
         <div class="name">${pokemon.name}</div>
         <div class="type">${pokemon.types.join(", ")}</div>
       </div>
-    </div>`;
+    </a>`;
   }
   return html;
 };
