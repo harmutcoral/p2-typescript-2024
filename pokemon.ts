@@ -4,6 +4,7 @@ export class Pokemon {
     public name: string,
     public types: string[],
     public abilities: string[],
+    public moves: string[], 
     public imageUrl: string
   ) {}
 }
@@ -18,8 +19,9 @@ export const loadPokemons = async (n: number) => {
     const id = pokemonData.id;
     const types = pokemonData.types.map((type: any) => type.type.name);
     const abilities = pokemonData.abilities.map((ability: any) => ability.ability.name);
+    const moves = pokemonData.moves.map((move: any) => move.move.name); 
     const imageUrl = pokemonData.sprites.front_default;
-    pokemons.push(new Pokemon(id, name, types, abilities, imageUrl));
+    pokemons.push(new Pokemon(id, name, types, abilities, moves, imageUrl)); 
   }
   return pokemons;
 };
