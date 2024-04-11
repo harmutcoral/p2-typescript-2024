@@ -36,7 +36,7 @@ const head = (title: string) => `
 const renderPokemons = (pokemons: Pokemon[]) => {
   let html = "";
   for (const pokemon of pokemons) {
-    html += `<div class="pokemon">
+    html += `<div class="pokemon" onclick="console.log('click works')">
       <img src="${pokemon.imageUrl}" />
       <div class="data">
         <div class="name">${pokemon.name}</div>
