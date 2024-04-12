@@ -1,13 +1,14 @@
-import { writeFile} from "fs/promises";
+import { writeFile } from "fs/promises";
 import { render } from "./render.js";
 import { Pokemon, loadPokemons } from "./pokemon.js";
 import { join } from "path";
 
 async function generatePokemonHTML(pokemon: Pokemon) {
-    let abilitiesWithEffects = '';
+    let abilitiesWithEffects = "";
     for (const ability of pokemon.abilities) {
-        const effect = await ability.effect; 
-        const capitalizedAbilityName = ability.name.charAt(0).toUpperCase() + ability.name.slice(1);
+        const effect = await ability.effect;
+        const capitalizedAbilityName =
+            ability.name.charAt(0).toUpperCase() + ability.name.slice(1);
         abilitiesWithEffects += `<p><strong>${capitalizedAbilityName}:</strong> ${effect}</p>`;
     }
 
@@ -59,22 +60,22 @@ async function generatePokemonHTML(pokemon: Pokemon) {
         <body>
             <div class="container">
                 <h1 class="capitalize">${pokemon.name}</h1>
-                <p><strong>Type:</strong> ${pokemon.types.join(', ')}</p>
+                <p><strong>Type:</strong> ${pokemon.types.join(", ")}</p>
                 <p><strong>Abilities:</strong><i>${abilitiesWithEffects}</i></p>
-                <p><strong>Moves:</strong> ${pokemon.moves.join(', ')}</p>
+                <p><strong>Moves:</strong> ${pokemon.moves.join(", ")}</p>
                 <p><img src="${pokemon.imageUrl}" /></p>
             </div>
         </body>
         </html>
     `;
-    const folderPath = join("./pokemon-data"); 
+    const folderPath = join("./pokemon-data");
     await writeFile(join(folderPath, `${pokemon.name}.html`), html);
 }
 
 async function main() {
     const pokemons = await loadPokemons(100);
     const html = render(pokemons);
-    await writeFile('pokemons.html', html);
+    await writeFile("pokemons.html", html);
 
     for (const pokemon of pokemons) {
         await generatePokemonHTML(pokemon);
