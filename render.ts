@@ -1,18 +1,26 @@
 import { Pokemon } from "./pokemon.js";
 
-const head = (title: string) => `
-<head>
+const head = (title: string) => 
+`<head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${title}</title>
-
   <style>
     body {
-      margin: 0;
-      padding: 0;
+      background-image: url('https://i.pinimg.com/564x/98/c1/5a/98c15a449a1166ec23f5c9f1f63995dd.jpg');
+      background-size: auto;
     }
     
+    .pokemon-list {
+      max-width: 70%;
+      margin: 0 auto; 
+      padding: 20px; 
+      border: 2px solid #ddd; 
+      border-radius: 8px; 
+      background-color: rgba(255, 255, 255, 0.8); 
+    }
+
     .pokemon {
       font-family: sans-serif;
       display: flex;
@@ -46,12 +54,11 @@ const head = (title: string) => `
       margin: 0; 
     }
 
-    .pokemon-list {
-      max-width: 30%;
-      margin: 0 auto; 
-      padding: 20px; 
-      border: 2px solid #ddd; 
-      border-radius: 8px; 
+    .title {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #333;
     }
   </style>
 </head>`;
