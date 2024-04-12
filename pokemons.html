@@ -6,633 +6,647 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pokemon List</title>
+
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-    }
-    .pokemon {
-      font-family: sans-serif;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      padding: .4rem;
-      border-bottom: 1px solid #ddd;
-      cursor: pointer; 
-    }
-    .pokemon img {
-      width: 3rem;
-      height: 3rem;
-      margin-right: 0.7rem;
-    }
-    .pokemon .name {
-      font-weight: bold;
-    }
-    .pokemon .type {
-      font-family: monospace;
-    }
-  </style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .pokemon {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: .4em;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer; 
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .pokemon img {
+    width: 5em;
+    height: 5em;
+    margin-right: 1em;
+  }
+  
+  .pokemon .data {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .pokemon .name {
+    font-weight: bold;
+    margin-bottom: 0.2em; 
+  }
+  
+  .pokemon .type {
+    font-family: monospace;
+    margin: 0; 
+  }
+</style>
 </head>
   <body>
     <a href="pokemon-data/bulbasaur.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="bulbasaur" />
       <div class="data">
-        <div class="name">bulbasaur</div>
-        <div class="type">grass, poison</div>
+        <h3 class="name">bulbasaur</h3>
+        <p class="type">grass, poison</p>
       </div>
     </a><a href="pokemon-data/ivysaur.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="ivysaur" />
       <div class="data">
-        <div class="name">ivysaur</div>
-        <div class="type">grass, poison</div>
+        <h3 class="name">ivysaur</h3>
+        <p class="type">grass, poison</p>
       </div>
     </a><a href="pokemon-data/venusaur.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="venusaur" />
       <div class="data">
-        <div class="name">venusaur</div>
-        <div class="type">grass, poison</div>
+        <h3 class="name">venusaur</h3>
+        <p class="type">grass, poison</p>
       </div>
     </a><a href="pokemon-data/charmander.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png" alt="charmander" />
       <div class="data">
-        <div class="name">charmander</div>
-        <div class="type">fire</div>
+        <h3 class="name">charmander</h3>
+        <p class="type">fire</p>
       </div>
     </a><a href="pokemon-data/charmeleon.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png" alt="charmeleon" />
       <div class="data">
-        <div class="name">charmeleon</div>
-        <div class="type">fire</div>
+        <h3 class="name">charmeleon</h3>
+        <p class="type">fire</p>
       </div>
     </a><a href="pokemon-data/charizard.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png" alt="charizard" />
       <div class="data">
-        <div class="name">charizard</div>
-        <div class="type">fire, flying</div>
+        <h3 class="name">charizard</h3>
+        <p class="type">fire, flying</p>
       </div>
     </a><a href="pokemon-data/squirtle.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png" alt="squirtle" />
       <div class="data">
-        <div class="name">squirtle</div>
-        <div class="type">water</div>
+        <h3 class="name">squirtle</h3>
+        <p class="type">water</p>
       </div>
     </a><a href="pokemon-data/wartortle.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png" alt="wartortle" />
       <div class="data">
-        <div class="name">wartortle</div>
-        <div class="type">water</div>
+        <h3 class="name">wartortle</h3>
+        <p class="type">water</p>
       </div>
     </a><a href="pokemon-data/blastoise.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png" alt="blastoise" />
       <div class="data">
-        <div class="name">blastoise</div>
-        <div class="type">water</div>
+        <h3 class="name">blastoise</h3>
+        <p class="type">water</p>
       </div>
     </a><a href="pokemon-data/caterpie.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png" alt="caterpie" />
       <div class="data">
-        <div class="name">caterpie</div>
-        <div class="type">bug</div>
+        <h3 class="name">caterpie</h3>
+        <p class="type">bug</p>
       </div>
     </a><a href="pokemon-data/metapod.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png" alt="metapod" />
       <div class="data">
-        <div class="name">metapod</div>
-        <div class="type">bug</div>
+        <h3 class="name">metapod</h3>
+        <p class="type">bug</p>
       </div>
     </a><a href="pokemon-data/butterfree.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png" alt="butterfree" />
       <div class="data">
-        <div class="name">butterfree</div>
-        <div class="type">bug, flying</div>
+        <h3 class="name">butterfree</h3>
+        <p class="type">bug, flying</p>
       </div>
     </a><a href="pokemon-data/weedle.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png" alt="weedle" />
       <div class="data">
-        <div class="name">weedle</div>
-        <div class="type">bug, poison</div>
+        <h3 class="name">weedle</h3>
+        <p class="type">bug, poison</p>
       </div>
     </a><a href="pokemon-data/kakuna.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png" alt="kakuna" />
       <div class="data">
-        <div class="name">kakuna</div>
-        <div class="type">bug, poison</div>
+        <h3 class="name">kakuna</h3>
+        <p class="type">bug, poison</p>
       </div>
     </a><a href="pokemon-data/beedrill.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png" alt="beedrill" />
       <div class="data">
-        <div class="name">beedrill</div>
-        <div class="type">bug, poison</div>
+        <h3 class="name">beedrill</h3>
+        <p class="type">bug, poison</p>
       </div>
     </a><a href="pokemon-data/pidgey.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png" alt="pidgey" />
       <div class="data">
-        <div class="name">pidgey</div>
-        <div class="type">normal, flying</div>
+        <h3 class="name">pidgey</h3>
+        <p class="type">normal, flying</p>
       </div>
     </a><a href="pokemon-data/pidgeotto.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png" alt="pidgeotto" />
       <div class="data">
-        <div class="name">pidgeotto</div>
-        <div class="type">normal, flying</div>
+        <h3 class="name">pidgeotto</h3>
+        <p class="type">normal, flying</p>
       </div>
     </a><a href="pokemon-data/pidgeot.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png" alt="pidgeot" />
       <div class="data">
-        <div class="name">pidgeot</div>
-        <div class="type">normal, flying</div>
+        <h3 class="name">pidgeot</h3>
+        <p class="type">normal, flying</p>
       </div>
     </a><a href="pokemon-data/rattata.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png" alt="rattata" />
       <div class="data">
-        <div class="name">rattata</div>
-        <div class="type">normal</div>
+        <h3 class="name">rattata</h3>
+        <p class="type">normal</p>
       </div>
     </a><a href="pokemon-data/raticate.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png" alt="raticate" />
       <div class="data">
-        <div class="name">raticate</div>
-        <div class="type">normal</div>
+        <h3 class="name">raticate</h3>
+        <p class="type">normal</p>
       </div>
     </a><a href="pokemon-data/spearow.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/21.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/21.png" alt="spearow" />
       <div class="data">
-        <div class="name">spearow</div>
-        <div class="type">normal, flying</div>
+        <h3 class="name">spearow</h3>
+        <p class="type">normal, flying</p>
       </div>
     </a><a href="pokemon-data/fearow.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png" alt="fearow" />
       <div class="data">
-        <div class="name">fearow</div>
-        <div class="type">normal, flying</div>
+        <h3 class="name">fearow</h3>
+        <p class="type">normal, flying</p>
       </div>
     </a><a href="pokemon-data/ekans.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png" alt="ekans" />
       <div class="data">
-        <div class="name">ekans</div>
-        <div class="type">poison</div>
+        <h3 class="name">ekans</h3>
+        <p class="type">poison</p>
       </div>
     </a><a href="pokemon-data/arbok.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png" alt="arbok" />
       <div class="data">
-        <div class="name">arbok</div>
-        <div class="type">poison</div>
+        <h3 class="name">arbok</h3>
+        <p class="type">poison</p>
       </div>
     </a><a href="pokemon-data/pikachu.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="pikachu" />
       <div class="data">
-        <div class="name">pikachu</div>
-        <div class="type">electric</div>
+        <h3 class="name">pikachu</h3>
+        <p class="type">electric</p>
       </div>
     </a><a href="pokemon-data/raichu.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png" alt="raichu" />
       <div class="data">
-        <div class="name">raichu</div>
-        <div class="type">electric</div>
+        <h3 class="name">raichu</h3>
+        <p class="type">electric</p>
       </div>
     </a><a href="pokemon-data/sandshrew.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png" alt="sandshrew" />
       <div class="data">
-        <div class="name">sandshrew</div>
-        <div class="type">ground</div>
+        <h3 class="name">sandshrew</h3>
+        <p class="type">ground</p>
       </div>
     </a><a href="pokemon-data/sandslash.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png" alt="sandslash" />
       <div class="data">
-        <div class="name">sandslash</div>
-        <div class="type">ground</div>
+        <h3 class="name">sandslash</h3>
+        <p class="type">ground</p>
       </div>
     </a><a href="pokemon-data/nidoran-f.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/29.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/29.png" alt="nidoran-f" />
       <div class="data">
-        <div class="name">nidoran-f</div>
-        <div class="type">poison</div>
+        <h3 class="name">nidoran-f</h3>
+        <p class="type">poison</p>
       </div>
     </a><a href="pokemon-data/nidorina.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/30.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/30.png" alt="nidorina" />
       <div class="data">
-        <div class="name">nidorina</div>
-        <div class="type">poison</div>
+        <h3 class="name">nidorina</h3>
+        <p class="type">poison</p>
       </div>
     </a><a href="pokemon-data/nidoqueen.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/31.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/31.png" alt="nidoqueen" />
       <div class="data">
-        <div class="name">nidoqueen</div>
-        <div class="type">poison, ground</div>
+        <h3 class="name">nidoqueen</h3>
+        <p class="type">poison, ground</p>
       </div>
     </a><a href="pokemon-data/nidoran-m.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/32.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/32.png" alt="nidoran-m" />
       <div class="data">
-        <div class="name">nidoran-m</div>
-        <div class="type">poison</div>
+        <h3 class="name">nidoran-m</h3>
+        <p class="type">poison</p>
       </div>
     </a><a href="pokemon-data/nidorino.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/33.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/33.png" alt="nidorino" />
       <div class="data">
-        <div class="name">nidorino</div>
-        <div class="type">poison</div>
+        <h3 class="name">nidorino</h3>
+        <p class="type">poison</p>
       </div>
     </a><a href="pokemon-data/nidoking.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/34.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/34.png" alt="nidoking" />
       <div class="data">
-        <div class="name">nidoking</div>
-        <div class="type">poison, ground</div>
+        <h3 class="name">nidoking</h3>
+        <p class="type">poison, ground</p>
       </div>
     </a><a href="pokemon-data/clefairy.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png" alt="clefairy" />
       <div class="data">
-        <div class="name">clefairy</div>
-        <div class="type">fairy</div>
+        <h3 class="name">clefairy</h3>
+        <p class="type">fairy</p>
       </div>
     </a><a href="pokemon-data/clefable.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png" alt="clefable" />
       <div class="data">
-        <div class="name">clefable</div>
-        <div class="type">fairy</div>
+        <h3 class="name">clefable</h3>
+        <p class="type">fairy</p>
       </div>
     </a><a href="pokemon-data/vulpix.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png" alt="vulpix" />
       <div class="data">
-        <div class="name">vulpix</div>
-        <div class="type">fire</div>
+        <h3 class="name">vulpix</h3>
+        <p class="type">fire</p>
       </div>
     </a><a href="pokemon-data/ninetales.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png" alt="ninetales" />
       <div class="data">
-        <div class="name">ninetales</div>
-        <div class="type">fire</div>
+        <h3 class="name">ninetales</h3>
+        <p class="type">fire</p>
       </div>
     </a><a href="pokemon-data/jigglypuff.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png" alt="jigglypuff" />
       <div class="data">
-        <div class="name">jigglypuff</div>
-        <div class="type">normal, fairy</div>
+        <h3 class="name">jigglypuff</h3>
+        <p class="type">normal, fairy</p>
       </div>
     </a><a href="pokemon-data/wigglytuff.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/40.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/40.png" alt="wigglytuff" />
       <div class="data">
-        <div class="name">wigglytuff</div>
-        <div class="type">normal, fairy</div>
+        <h3 class="name">wigglytuff</h3>
+        <p class="type">normal, fairy</p>
       </div>
     </a><a href="pokemon-data/zubat.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/41.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/41.png" alt="zubat" />
       <div class="data">
-        <div class="name">zubat</div>
-        <div class="type">poison, flying</div>
+        <h3 class="name">zubat</h3>
+        <p class="type">poison, flying</p>
       </div>
     </a><a href="pokemon-data/golbat.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/42.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/42.png" alt="golbat" />
       <div class="data">
-        <div class="name">golbat</div>
-        <div class="type">poison, flying</div>
+        <h3 class="name">golbat</h3>
+        <p class="type">poison, flying</p>
       </div>
     </a><a href="pokemon-data/oddish.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/43.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/43.png" alt="oddish" />
       <div class="data">
-        <div class="name">oddish</div>
-        <div class="type">grass, poison</div>
+        <h3 class="name">oddish</h3>
+        <p class="type">grass, poison</p>
       </div>
     </a><a href="pokemon-data/gloom.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/44.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/44.png" alt="gloom" />
       <div class="data">
-        <div class="name">gloom</div>
-        <div class="type">grass, poison</div>
+        <h3 class="name">gloom</h3>
+        <p class="type">grass, poison</p>
       </div>
     </a><a href="pokemon-data/vileplume.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/45.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/45.png" alt="vileplume" />
       <div class="data">
-        <div class="name">vileplume</div>
-        <div class="type">grass, poison</div>
+        <h3 class="name">vileplume</h3>
+        <p class="type">grass, poison</p>
       </div>
     </a><a href="pokemon-data/paras.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/46.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/46.png" alt="paras" />
       <div class="data">
-        <div class="name">paras</div>
-        <div class="type">bug, grass</div>
+        <h3 class="name">paras</h3>
+        <p class="type">bug, grass</p>
       </div>
     </a><a href="pokemon-data/parasect.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/47.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/47.png" alt="parasect" />
       <div class="data">
-        <div class="name">parasect</div>
-        <div class="type">bug, grass</div>
+        <h3 class="name">parasect</h3>
+        <p class="type">bug, grass</p>
       </div>
     </a><a href="pokemon-data/venonat.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/48.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/48.png" alt="venonat" />
       <div class="data">
-        <div class="name">venonat</div>
-        <div class="type">bug, poison</div>
+        <h3 class="name">venonat</h3>
+        <p class="type">bug, poison</p>
       </div>
     </a><a href="pokemon-data/venomoth.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/49.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/49.png" alt="venomoth" />
       <div class="data">
-        <div class="name">venomoth</div>
-        <div class="type">bug, poison</div>
+        <h3 class="name">venomoth</h3>
+        <p class="type">bug, poison</p>
       </div>
     </a><a href="pokemon-data/diglett.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/50.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/50.png" alt="diglett" />
       <div class="data">
-        <div class="name">diglett</div>
-        <div class="type">ground</div>
+        <h3 class="name">diglett</h3>
+        <p class="type">ground</p>
       </div>
     </a><a href="pokemon-data/dugtrio.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/51.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/51.png" alt="dugtrio" />
       <div class="data">
-        <div class="name">dugtrio</div>
-        <div class="type">ground</div>
+        <h3 class="name">dugtrio</h3>
+        <p class="type">ground</p>
       </div>
     </a><a href="pokemon-data/meowth.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/52.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/52.png" alt="meowth" />
       <div class="data">
-        <div class="name">meowth</div>
-        <div class="type">normal</div>
+        <h3 class="name">meowth</h3>
+        <p class="type">normal</p>
       </div>
     </a><a href="pokemon-data/persian.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/53.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/53.png" alt="persian" />
       <div class="data">
-        <div class="name">persian</div>
-        <div class="type">normal</div>
+        <h3 class="name">persian</h3>
+        <p class="type">normal</p>
       </div>
     </a><a href="pokemon-data/psyduck.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png" alt="psyduck" />
       <div class="data">
-        <div class="name">psyduck</div>
-        <div class="type">water</div>
+        <h3 class="name">psyduck</h3>
+        <p class="type">water</p>
       </div>
     </a><a href="pokemon-data/golduck.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/55.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/55.png" alt="golduck" />
       <div class="data">
-        <div class="name">golduck</div>
-        <div class="type">water</div>
+        <h3 class="name">golduck</h3>
+        <p class="type">water</p>
       </div>
     </a><a href="pokemon-data/mankey.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/56.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/56.png" alt="mankey" />
       <div class="data">
-        <div class="name">mankey</div>
-        <div class="type">fighting</div>
+        <h3 class="name">mankey</h3>
+        <p class="type">fighting</p>
       </div>
     </a><a href="pokemon-data/primeape.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/57.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/57.png" alt="primeape" />
       <div class="data">
-        <div class="name">primeape</div>
-        <div class="type">fighting</div>
+        <h3 class="name">primeape</h3>
+        <p class="type">fighting</p>
       </div>
     </a><a href="pokemon-data/growlithe.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png" alt="growlithe" />
       <div class="data">
-        <div class="name">growlithe</div>
-        <div class="type">fire</div>
+        <h3 class="name">growlithe</h3>
+        <p class="type">fire</p>
       </div>
     </a><a href="pokemon-data/arcanine.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png" alt="arcanine" />
       <div class="data">
-        <div class="name">arcanine</div>
-        <div class="type">fire</div>
+        <h3 class="name">arcanine</h3>
+        <p class="type">fire</p>
       </div>
     </a><a href="pokemon-data/poliwag.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png" alt="poliwag" />
       <div class="data">
-        <div class="name">poliwag</div>
-        <div class="type">water</div>
+        <h3 class="name">poliwag</h3>
+        <p class="type">water</p>
       </div>
     </a><a href="pokemon-data/poliwhirl.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/61.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/61.png" alt="poliwhirl" />
       <div class="data">
-        <div class="name">poliwhirl</div>
-        <div class="type">water</div>
+        <h3 class="name">poliwhirl</h3>
+        <p class="type">water</p>
       </div>
     </a><a href="pokemon-data/poliwrath.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/62.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/62.png" alt="poliwrath" />
       <div class="data">
-        <div class="name">poliwrath</div>
-        <div class="type">water, fighting</div>
+        <h3 class="name">poliwrath</h3>
+        <p class="type">water, fighting</p>
       </div>
     </a><a href="pokemon-data/abra.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/63.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/63.png" alt="abra" />
       <div class="data">
-        <div class="name">abra</div>
-        <div class="type">psychic</div>
+        <h3 class="name">abra</h3>
+        <p class="type">psychic</p>
       </div>
     </a><a href="pokemon-data/kadabra.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/64.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/64.png" alt="kadabra" />
       <div class="data">
-        <div class="name">kadabra</div>
-        <div class="type">psychic</div>
+        <h3 class="name">kadabra</h3>
+        <p class="type">psychic</p>
       </div>
     </a><a href="pokemon-data/alakazam.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/65.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/65.png" alt="alakazam" />
       <div class="data">
-        <div class="name">alakazam</div>
-        <div class="type">psychic</div>
+        <h3 class="name">alakazam</h3>
+        <p class="type">psychic</p>
       </div>
     </a><a href="pokemon-data/machop.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/66.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/66.png" alt="machop" />
       <div class="data">
-        <div class="name">machop</div>
-        <div class="type">fighting</div>
+        <h3 class="name">machop</h3>
+        <p class="type">fighting</p>
       </div>
     </a><a href="pokemon-data/machoke.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/67.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/67.png" alt="machoke" />
       <div class="data">
-        <div class="name">machoke</div>
-        <div class="type">fighting</div>
+        <h3 class="name">machoke</h3>
+        <p class="type">fighting</p>
       </div>
     </a><a href="pokemon-data/machamp.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/68.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/68.png" alt="machamp" />
       <div class="data">
-        <div class="name">machamp</div>
-        <div class="type">fighting</div>
+        <h3 class="name">machamp</h3>
+        <p class="type">fighting</p>
       </div>
     </a><a href="pokemon-data/bellsprout.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/69.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/69.png" alt="bellsprout" />
       <div class="data">
-        <div class="name">bellsprout</div>
-        <div class="type">grass, poison</div>
+        <h3 class="name">bellsprout</h3>
+        <p class="type">grass, poison</p>
       </div>
     </a><a href="pokemon-data/weepinbell.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/70.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/70.png" alt="weepinbell" />
       <div class="data">
-        <div class="name">weepinbell</div>
-        <div class="type">grass, poison</div>
+        <h3 class="name">weepinbell</h3>
+        <p class="type">grass, poison</p>
       </div>
     </a><a href="pokemon-data/victreebel.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/71.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/71.png" alt="victreebel" />
       <div class="data">
-        <div class="name">victreebel</div>
-        <div class="type">grass, poison</div>
+        <h3 class="name">victreebel</h3>
+        <p class="type">grass, poison</p>
       </div>
     </a><a href="pokemon-data/tentacool.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/72.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/72.png" alt="tentacool" />
       <div class="data">
-        <div class="name">tentacool</div>
-        <div class="type">water, poison</div>
+        <h3 class="name">tentacool</h3>
+        <p class="type">water, poison</p>
       </div>
     </a><a href="pokemon-data/tentacruel.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/73.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/73.png" alt="tentacruel" />
       <div class="data">
-        <div class="name">tentacruel</div>
-        <div class="type">water, poison</div>
+        <h3 class="name">tentacruel</h3>
+        <p class="type">water, poison</p>
       </div>
     </a><a href="pokemon-data/geodude.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png" alt="geodude" />
       <div class="data">
-        <div class="name">geodude</div>
-        <div class="type">rock, ground</div>
+        <h3 class="name">geodude</h3>
+        <p class="type">rock, ground</p>
       </div>
     </a><a href="pokemon-data/graveler.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/75.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/75.png" alt="graveler" />
       <div class="data">
-        <div class="name">graveler</div>
-        <div class="type">rock, ground</div>
+        <h3 class="name">graveler</h3>
+        <p class="type">rock, ground</p>
       </div>
     </a><a href="pokemon-data/golem.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/76.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/76.png" alt="golem" />
       <div class="data">
-        <div class="name">golem</div>
-        <div class="type">rock, ground</div>
+        <h3 class="name">golem</h3>
+        <p class="type">rock, ground</p>
       </div>
     </a><a href="pokemon-data/ponyta.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/77.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/77.png" alt="ponyta" />
       <div class="data">
-        <div class="name">ponyta</div>
-        <div class="type">fire</div>
+        <h3 class="name">ponyta</h3>
+        <p class="type">fire</p>
       </div>
     </a><a href="pokemon-data/rapidash.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/78.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/78.png" alt="rapidash" />
       <div class="data">
-        <div class="name">rapidash</div>
-        <div class="type">fire</div>
+        <h3 class="name">rapidash</h3>
+        <p class="type">fire</p>
       </div>
     </a><a href="pokemon-data/slowpoke.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png" alt="slowpoke" />
       <div class="data">
-        <div class="name">slowpoke</div>
-        <div class="type">water, psychic</div>
+        <h3 class="name">slowpoke</h3>
+        <p class="type">water, psychic</p>
       </div>
     </a><a href="pokemon-data/slowbro.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/80.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/80.png" alt="slowbro" />
       <div class="data">
-        <div class="name">slowbro</div>
-        <div class="type">water, psychic</div>
+        <h3 class="name">slowbro</h3>
+        <p class="type">water, psychic</p>
       </div>
     </a><a href="pokemon-data/magnemite.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/81.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/81.png" alt="magnemite" />
       <div class="data">
-        <div class="name">magnemite</div>
-        <div class="type">electric, steel</div>
+        <h3 class="name">magnemite</h3>
+        <p class="type">electric, steel</p>
       </div>
     </a><a href="pokemon-data/magneton.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/82.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/82.png" alt="magneton" />
       <div class="data">
-        <div class="name">magneton</div>
-        <div class="type">electric, steel</div>
+        <h3 class="name">magneton</h3>
+        <p class="type">electric, steel</p>
       </div>
     </a><a href="pokemon-data/farfetchd.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/83.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/83.png" alt="farfetchd" />
       <div class="data">
-        <div class="name">farfetchd</div>
-        <div class="type">normal, flying</div>
+        <h3 class="name">farfetchd</h3>
+        <p class="type">normal, flying</p>
       </div>
     </a><a href="pokemon-data/doduo.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/84.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/84.png" alt="doduo" />
       <div class="data">
-        <div class="name">doduo</div>
-        <div class="type">normal, flying</div>
+        <h3 class="name">doduo</h3>
+        <p class="type">normal, flying</p>
       </div>
     </a><a href="pokemon-data/dodrio.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/85.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/85.png" alt="dodrio" />
       <div class="data">
-        <div class="name">dodrio</div>
-        <div class="type">normal, flying</div>
+        <h3 class="name">dodrio</h3>
+        <p class="type">normal, flying</p>
       </div>
     </a><a href="pokemon-data/seel.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/86.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/86.png" alt="seel" />
       <div class="data">
-        <div class="name">seel</div>
-        <div class="type">water</div>
+        <h3 class="name">seel</h3>
+        <p class="type">water</p>
       </div>
     </a><a href="pokemon-data/dewgong.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png" alt="dewgong" />
       <div class="data">
-        <div class="name">dewgong</div>
-        <div class="type">water, ice</div>
+        <h3 class="name">dewgong</h3>
+        <p class="type">water, ice</p>
       </div>
     </a><a href="pokemon-data/grimer.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png" alt="grimer" />
       <div class="data">
-        <div class="name">grimer</div>
-        <div class="type">poison</div>
+        <h3 class="name">grimer</h3>
+        <p class="type">poison</p>
       </div>
     </a><a href="pokemon-data/muk.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png" alt="muk" />
       <div class="data">
-        <div class="name">muk</div>
-        <div class="type">poison</div>
+        <h3 class="name">muk</h3>
+        <p class="type">poison</p>
       </div>
     </a><a href="pokemon-data/shellder.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/90.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/90.png" alt="shellder" />
       <div class="data">
-        <div class="name">shellder</div>
-        <div class="type">water</div>
+        <h3 class="name">shellder</h3>
+        <p class="type">water</p>
       </div>
     </a><a href="pokemon-data/cloyster.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png" alt="cloyster" />
       <div class="data">
-        <div class="name">cloyster</div>
-        <div class="type">water, ice</div>
+        <h3 class="name">cloyster</h3>
+        <p class="type">water, ice</p>
       </div>
     </a><a href="pokemon-data/gastly.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/92.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/92.png" alt="gastly" />
       <div class="data">
-        <div class="name">gastly</div>
-        <div class="type">ghost, poison</div>
+        <h3 class="name">gastly</h3>
+        <p class="type">ghost, poison</p>
       </div>
     </a><a href="pokemon-data/haunter.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png" alt="haunter" />
       <div class="data">
-        <div class="name">haunter</div>
-        <div class="type">ghost, poison</div>
+        <h3 class="name">haunter</h3>
+        <p class="type">ghost, poison</p>
       </div>
     </a><a href="pokemon-data/gengar.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png" alt="gengar" />
       <div class="data">
-        <div class="name">gengar</div>
-        <div class="type">ghost, poison</div>
+        <h3 class="name">gengar</h3>
+        <p class="type">ghost, poison</p>
       </div>
     </a><a href="pokemon-data/onix.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/95.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/95.png" alt="onix" />
       <div class="data">
-        <div class="name">onix</div>
-        <div class="type">rock, ground</div>
+        <h3 class="name">onix</h3>
+        <p class="type">rock, ground</p>
       </div>
     </a><a href="pokemon-data/drowzee.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/96.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/96.png" alt="drowzee" />
       <div class="data">
-        <div class="name">drowzee</div>
-        <div class="type">psychic</div>
+        <h3 class="name">drowzee</h3>
+        <p class="type">psychic</p>
       </div>
     </a><a href="pokemon-data/hypno.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/97.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/97.png" alt="hypno" />
       <div class="data">
-        <div class="name">hypno</div>
-        <div class="type">psychic</div>
+        <h3 class="name">hypno</h3>
+        <p class="type">psychic</p>
       </div>
     </a><a href="pokemon-data/krabby.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/98.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/98.png" alt="krabby" />
       <div class="data">
-        <div class="name">krabby</div>
-        <div class="type">water</div>
+        <h3 class="name">krabby</h3>
+        <p class="type">water</p>
       </div>
     </a><a href="pokemon-data/kingler.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/99.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/99.png" alt="kingler" />
       <div class="data">
-        <div class="name">kingler</div>
-        <div class="type">water</div>
+        <h3 class="name">kingler</h3>
+        <p class="type">water</p>
       </div>
     </a><a href="pokemon-data/voltorb.html" class="pokemon">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/100.png" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/100.png" alt="voltorb" />
       <div class="data">
-        <div class="name">voltorb</div>
-        <div class="type">electric</div>
+        <h3 class="name">voltorb</h3>
+        <p class="type">electric</p>
       </div>
     </a>
   </body>
