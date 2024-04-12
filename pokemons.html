@@ -1,6 +1,7 @@
 
 <html>
-  <head>
+  
+<head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,10 +45,20 @@
       font-family: monospace;
       margin: 0; 
     }
+
+    .pokemon-list {
+      max-width: 30%;
+      margin: 0 auto; 
+      padding: 20px; 
+      border: 2px solid #ddd; 
+      border-radius: 8px; 
+    }
   </style>
 </head>
   <body>
-    <a href="pokemon-data/bulbasaur.html" class="pokemon" style="text-decoration: none; color: #333;">
+    <div class="pokemon-list">
+      <h1 class="title">Choose your Pokémon</h1>
+      <a href="pokemon-data/bulbasaur.html" class="pokemon" style="text-decoration: none; color: #333;">
       <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="bulbasaur" style="width: 5em; height: 5em; margin-right: 1em;" />
       <div class="data">
         <h3 class="name" style="font-weight: bold; margin-bottom: 0.2em;">bulbasaur</h3>
@@ -648,5 +659,6 @@
         <p class="type" style="font-family: monospace; margin: 0;">electric</p>
       </div>
     </a>
+    </div>
   </body>
 </html>

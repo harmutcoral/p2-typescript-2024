@@ -1,7 +1,7 @@
 import { Pokemon } from "./pokemon.js";
 
-const head = (title: string) => 
-`<head>
+const head = (title: string) => `
+<head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,6 +45,14 @@ const head = (title: string) =>
       font-family: monospace;
       margin: 0; 
     }
+
+    .pokemon-list {
+      max-width: 30%;
+      margin: 0 auto; 
+      padding: 20px; 
+      border: 2px solid #ddd; 
+      border-radius: 8px; 
+    }
   </style>
 </head>`;
 
@@ -68,7 +76,9 @@ export const render = (pokemons: Pokemon[]) => {
 <html>
   ${head("Pokémon List")}
   <body>
-    ${renderPokemons(pokemons)}
+    <div class="pokemon-list">
+      ${renderPokemons(pokemons)}
+    </div>
   </body>
 </html>`;
 };
