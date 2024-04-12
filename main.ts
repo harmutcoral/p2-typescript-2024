@@ -4,8 +4,14 @@ import { Pokemon, loadPokemons } from "./pokemon.js";
 import { join } from "path";
 
 async function generatePokemonHTML(pokemon: Pokemon) {
-    const html = `
-        <html>
+    let abilitiesWithEffects = '';
+    for (const ability of pokemon.abilities) {
+        const effect = await ability.effect; // Wait for the effect promise to resolve
+        abilitiesWithEffects += `<p><strong>${ability.name}:</strong> ${effect}</p>`;
+    }
+
+    const html = 
+    `<html>
         <head>
             <title>${pokemon.name}</title>
             <style>
@@ -51,12 +57,12 @@ async function generatePokemonHTML(pokemon: Pokemon) {
             <div class="container">
                 <h1 class="capitalize">${pokemon.name}</h1>
                 <p><strong>Type:</strong> ${pokemon.types.join(', ')}</p>
-                <p><strong>Abilities:</strong> ${pokemon.abilities.join(', ')}</p>
+                ${abilitiesWithEffects} <!-- Include abilities with effects here -->
                 <p><strong>Moves:</strong> ${pokemon.moves.join(', ')}</p>
                 <p><img src="${pokemon.imageUrl}" /></p>
             </div>
         </body>
-        </html>
+    </html>
     `;
     const folderPath = join("./pokemon-data"); 
     await writeFile(join(folderPath, `${pokemon.name}.html`), html);
