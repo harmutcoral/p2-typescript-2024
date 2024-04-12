@@ -7,11 +7,12 @@ async function generatePokemonHTML(pokemon: Pokemon) {
     let abilitiesWithEffects = '';
     for (const ability of pokemon.abilities) {
         const effect = await ability.effect; 
-        abilitiesWithEffects += `<p><strong>${ability.name}:</strong> ${effect}</p>`;
+        const capitalizedAbilityName = ability.name.charAt(0).toUpperCase() + ability.name.slice(1);
+        abilitiesWithEffects += `<p><strong>${capitalizedAbilityName}:</strong> ${effect}</p>`;
     }
 
-    const html = 
-    `<html>
+    const html = `
+        <html>
         <head>
             <title>${pokemon.name}</title>
             <style>
@@ -62,7 +63,7 @@ async function generatePokemonHTML(pokemon: Pokemon) {
                 <p><img src="${pokemon.imageUrl}" /></p>
             </div>
         </body>
-    </html>
+        </html>
     `;
     const folderPath = join("./pokemon-data"); 
     await writeFile(join(folderPath, `${pokemon.name}.html`), html);
