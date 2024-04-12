@@ -8,55 +8,55 @@ const head = (title: string) => `
   <title>${title}</title>
 
   <style>
-  body {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .pokemon {
-    font-family: sans-serif;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: .4em;
-    border-bottom: 1px solid #ddd;
-    cursor: pointer; 
-    text-decoration: none;
-    color: #333;
-  }
-  
-  .pokemon img {
-    width: 5em;
-    height: 5em;
-    margin-right: 1em;
-  }
-  
-  .pokemon .data {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .pokemon .name {
-    font-weight: bold;
-    margin-bottom: 0.2em; 
-  }
-  
-  .pokemon .type {
-    font-family: monospace;
-    margin: 0; 
-  }
-</style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    
+    .pokemon {
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: .4em;
+      border-bottom: 1px solid #ddd;
+      cursor: pointer; 
+      text-decoration: none;
+      color: #333;
+    }
+    
+    .pokemon img {
+      width: 5em;
+      height: 5em;
+      margin-right: 1em;
+    }
+    
+    .pokemon .data {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .pokemon .name {
+      font-weight: bold;
+      margin-bottom: 0.2em; 
+    }
+    
+    .pokemon .type {
+      font-family: monospace;
+      margin: 0; 
+    }
+  </style>
 </head>`;
 
 const renderPokemons = (pokemons: Pokemon[]) => {
   let html = "";
   for (const pokemon of pokemons) {
     html += 
-    `<a href="pokemon-data/${pokemon.name.toLowerCase()}.html" class="pokemon">
-      <img src="${pokemon.imageUrl}" alt="${pokemon.name}" />
+    `<a href="pokemon-data/${pokemon.name}.html" class="pokemon" style="text-decoration: none; color: #333;">
+      <img src="${pokemon.imageUrl}" alt="${pokemon.name}" style="width: 5em; height: 5em; margin-right: 1em;" />
       <div class="data">
-        <h3 class="name">${pokemon.name}</h3>
-        <p class="type">${pokemon.types.join(", ")}</p>
+        <h3 class="name" style="font-weight: bold; margin-bottom: 0.2em;">${pokemon.name}</h3>
+        <p class="type" style="font-family: monospace; margin: 0;">${pokemon.types.join(", ")}</p>
       </div>
     </a>`;
   }
@@ -66,7 +66,7 @@ const renderPokemons = (pokemons: Pokemon[]) => {
 export const render = (pokemons: Pokemon[]) => {
   return `
 <html>
-  ${head("Pokemon List")}
+  ${head("Pokémon List")}
   <body>
     ${renderPokemons(pokemons)}
   </body>
