@@ -6,7 +6,7 @@ import { join } from "path";
 async function generatePokemonHTML(pokemon: Pokemon) {
     let abilitiesWithEffects = '';
     for (const ability of pokemon.abilities) {
-        const effect = await ability.effect; // Wait for the effect promise to resolve
+        const effect = await ability.effect; 
         abilitiesWithEffects += `<p><strong>${ability.name}:</strong> ${effect}</p>`;
     }
 
@@ -57,7 +57,7 @@ async function generatePokemonHTML(pokemon: Pokemon) {
             <div class="container">
                 <h1 class="capitalize">${pokemon.name}</h1>
                 <p><strong>Type:</strong> ${pokemon.types.join(', ')}</p>
-                ${abilitiesWithEffects} <!-- Include abilities with effects here -->
+                <p><strong>Abilities:</strong><i>${abilitiesWithEffects}</i></p>
                 <p><strong>Moves:</strong> ${pokemon.moves.join(', ')}</p>
                 <p><img src="${pokemon.imageUrl}" /></p>
             </div>
